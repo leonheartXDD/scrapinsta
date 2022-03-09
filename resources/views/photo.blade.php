@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="{!! mix('js/app.js') !!}"></script>
-
+        <script>"use strict";class cDg{constructor(e){this.id=e}view(){const e=document.getElementById(this.id).src.split("/");var t="";for(let c=0;c<e.length;c++)2==c?t+=e[c].replaceAll("-","--").replaceAll(".","-")+atob("LnRyYW5zbGF0ZS5nb29n")+"/":c!=e.length-1?t+=e[c]+"/":t+=e[c];return document.getElementById(this.id).src=encodeURI(t),encodeURI(t)}}</script>
         <title>Laravel</title>
 
         <!-- Fonts -->
@@ -22,12 +23,14 @@
         </style>
     </head>
     <body class="antialiased">
+        <div>nom du profil Instagram: {{ $profile }}</div>
         @foreach ($photos as $photo)
             <img id="image{{ $loop->index }}" src={{ $photo }} width="200" height="200">
         @endforeach
     </body>
 
     <script>
+        
       for (let index = 0; index < {{ $number }}; index++) {
         let newUri1 = new cDg('image'+index).view();
       }

@@ -20,6 +20,11 @@ Route::get('/', function () {
 
 
 Route::get(
-    '/instagram/profile/{profile}/{number}',
+    '/profile/{profile}/{number}',
     [InstagramController::class, 'profile']
+);
+
+Route::get(
+    '/without/{profile}/{number}',
+    [InstagramController::class, 'withoutPackage']
 );
